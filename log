@@ -1,0 +1,292 @@
+(pyneng-py3-7) 
+[~]
+python@debian: $ sudo apt-get install git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+git is already the newest version (1:2.11.0-3+deb9u4).
+The following packages were automatically installed and are no longer required:
+  ethtool libdumbnet1 libmspack0 libxerces-c3.1 libxml-security-c17v5 zerofree
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+(pyneng-py3-7) 
+[~]
+python@debian: $ git config --global user.name "Dima24266"
+(pyneng-py3-7) 
+[~]
+python@debian: $ git config --list
+user.name=Dima24266
+(pyneng-py3-7) 
+[~]
+python@debian: $ git config --global user.email "dima24266@gmail.com"
+(pyneng-py3-7) 
+[~]
+python@debian: $ git config --list
+user.name=Dima24266
+user.email=dima24266@gmail.com
+(pyneng-py3-7) 
+[~]
+python@debian: $ git init
+Initialized empty Git repository in /home/python/.git/
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…33] 
+05:46 $ ssh-keygen -t rsa -b 4096 -C "dima24266@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/python/.ssh/id_rsa): 
+Created directory '/home/python/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/python/.ssh/id_rsa.
+Your public key has been saved in /home/python/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:t9JatsrWWx0WjE7LpwX8uI1zi7VFv+GzXtylEjfzVwE dima24266@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|             E   |
+|           . o.  |
+|            = o. |
+|           + = ..|
+|        S . * X +|
+|         o . % O=|
+|        ..= B *.O|
+|       ..=.o *.==|
+|       .+.o.. +=o|
++----[SHA256]-----+
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…34] 
+05:51 $ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDyGRERQDNnz6g/EPCC++g9abu2PEUFD31vKglRUXRiV+qiFNvmPCqvHZGrUfVmz/gPBXkD2mOd4321BboR+pxAx+uPwVgfRrBV/KpHKaRQY16QCuZURE1f3x0WpUYg5JSua32zoYmOMj8iiXd/w5zn0V6CbZi3ctYc6iVXEIjFljDNQakUB97/Qfa7gi1tql/WeSEMN873XqZRlshOhxpKXzfeWcF1a6vbmxJoqbzxuLtervTF+Bub6RFJcAPhBAWu5lrsPb+N+fvf3QXyrMlbqlaafdfMoVa9JZKzlLeBxBwCE30p3YnXwXLZoCOkdsUrZ00ug/UqhluG/CMZQ+YvrvsOTMITV9vN28j3LpmE0DywyoFoe0osRwl1M2RfqcNsalkNScejume7t7BcSdtM1UUPn8SKMPey7VEXi6SePLHBoX7zh7M9IVh6xFM2uIZRgJ0C3ngguPTJvWR16LVP96ciJNL+wU+VCDCaVcXrhwA6W3Rf2Wpaq0bFMsKnQv2Eb2PnF3dOPjIJROvB0GTpCTrIl8gfZ4s2Rxms4cLr08lctq0kPN4m7ME529S+3lPCWWmm8fpdfMbn28EjU86gJRJjp021wSTg0dfE46eKuqwLzcorK97KWUtmjDH0FW4Ij6+9z6zGO+u129LwoTR7uRxVEs+yALymtFZZLiLI0Q== dima24266@gmail.com
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…34] 
+05:51 $ ^C
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…34] 
+05:52 $ ^C
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…35] 
+06:44 $ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no)? y  
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,140.82.121.3' (ECDSA) to the list of known hosts.
+Hi Dima24266! You've successfully authenticated, but GitHub does not provide shell access.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…35] 
+06:45 $ ssh -T git@github.com
+Hi Dima24266! You've successfully authenticated, but GitHub does not provide shell access.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…35] 
+06:45 $ ssh -T git@ssh.github.com
+The authenticity of host 'ssh.github.com (140.82.121.36)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ssh.github.com,140.82.121.36' (ECDSA) to the list of known hosts.
+Hi Dima24266! You've successfully authenticated, but GitHub does not provide shell access.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…35] 
+06:46 $ git clone ssh://git@github.com/pyneng/online-2-natasha-samoylenko.git
+Cloning into 'online-2-natasha-samoylenko'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…35] 
+06:46 $ git clone ssh://git@github.com/pyneng/online-2-natasha-samoylenko.git
+Cloning into 'online-2-natasha-samoylenko'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…35] 
+06:50 $ git clone ssh://git@github.com/Dima24266/new2.git
+Cloning into 'new2'...
+remote: Enumerating objects: 602, done.
+remote: Counting objects: 100% (602/602), done.
+remote: Compressing objects: 100% (520/520), done.
+remote: Total 602 (delta 118), reused 273 (delta 63), pack-reused 0
+Receiving objects: 100% (602/602), 335.17 KiB | 257.00 KiB/s, done.
+Resolving deltas: 100% (118/118), done.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+06:51 $ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+06:51 $ gti push origin master
+bash: gti: command not found
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+06:52 $ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'origin'
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+06:52 $ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'origin'
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+06:52 $ ды
+bash: ды: command not found
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+10:25 $ ls
+Desktop    GNS3     new2      README.md  venv    vmware-tools-distrib
+Documents  mu_code  Pictures  repos      Videos
+Downloads  Music    Public    Templates  vimrc
+(pyneng-py3-7) 
+[~]
+python@debian: $  [master L|…36] 
+10:26 $ cd new2
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|✔] 
+10:26 $ git pull
+Already up-to-date.
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|✔] 
+10:26 $ git pull
+Already up-to-date.
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|…1] 
+10:26 $ git add .
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|●1] 
+10:26 $ git pull
+Already up-to-date.
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|●1] 
+10:27 $ git add .
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|●1] 
+10:27 $ git commit -m test
+[master 5ff9269] test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master ↑·1|✔] 
+10:27 $ git pull
+Already up-to-date.
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master ↑·1|✔] 
+10:27 $ git commit -m test
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master ↑·1|✔] 
+10:29 $ git commit -m test
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   test
+
+no changes added to commit
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master ↑·1|✚ 1] 
+10:31 $ git pull
+git Already up-to-date.
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master ↑·1|✚ 1] 
+10:31 $ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 276 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To ssh://github.com/Dima24266/new2.git
+   e788550..5ff9269  master -> master
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|✚ 1] 
+10:31 $ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|✚ 1] 
+10:35 $ git config --list
+user.name=Dima24266
+user.email=dima24266@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=ssh://git@github.com/Dima24266/new2.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+(pyneng-py3-7) 
+[~/new2]
+python@debian: $  [master|✚ 1] 
+10:35 $ 
